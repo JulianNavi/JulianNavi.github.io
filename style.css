@@ -1,0 +1,65 @@
+/* dm-mono-500 - latin */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/dm-mono-v1-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('DM Mono Medium'), local('DMMono-Medium'),
+       url('../fonts/dm-mono-v1-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/dm-mono-v1-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/dm-mono-v1-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/dm-mono-v1-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/dm-mono-v1-latin-500.svg#DMMono') format('svg'); /* Legacy iOS */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+  display: flex;
+  background-color: #ffecc7;
+}
+.rightSide {
+  background-color: #f5b971;
+  clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+}
+.leftSide{
+  background-color: #85a392;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.rightSide, .leftSide {
+  width: 50%;
+  height: 100vh;
+}
+.information {
+  position: absolute;
+  padding: 40px;
+  background: #fff;
+  font-family: 'DMMono-Medium';
+}
+h1 {
+  font-size: 2.2em;
+  display: block;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.4em;
+  padding-top: 5px;
+  font-weight: normal;
+}
+.information p {
+  line-height: 3;
+  display: block;
+  color: red;
+}
+p a{
+  font-size: 1em;
+  color: black;
+}
+i.fa {
+    font-size: 1.2rem;
+}
+p a:visited > .fa {
+  color: black;
+}
